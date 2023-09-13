@@ -18,6 +18,29 @@ dependencies: [
 ### Example
 ```swift
 import UIKit
+import WWSignInWith3rd_Apple
+
+@main
+final class AppDelegate: UIResponder, UIApplicationDelegate {
+    
+    var window: UIWindow?
+    
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        return WWSignInWith3rd.Facebook.shared.canLaunching(application, didFinishLaunchingWithOptions: launchOptions)
+    }
+    
+    func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey : Any] = [:]) -> Bool {
+
+        let sourceApplication = options[UIApplication.OpenURLOptionsKey.sourceApplication] as? String
+        let annotation = options[UIApplication.OpenURLOptionsKey.annotation]
+        
+        return WWSignInWith3rd.Facebook.shared.canOpenURL(app, open: url, sourceApplication: sourceApplication, annotation: annotation)
+    }
+}
+
+```
+```swift
+import UIKit
 import WWPrint
 import WWSignInWith3rd_Apple
 import WWSignInWith3rd_Facebook
@@ -29,6 +52,7 @@ final class ViewController: UIViewController {
     }
     
     /// 設定 <FacebookAppID> + <FacebookClientToken> + <FacebookDisplayName> + <FacebookScheme>
+    /// [開啟Keychain sharing功能](https://8085studio.wordpress.com/2015/08/29/ios筆記-使用keychain在app間共享資料/)
     /// - Parameter sender: UIButton
     @IBAction func signInWithFacebook(_ sender: UIButton) {
         
