@@ -7,6 +7,7 @@
 
 import UIKit
 import WWSignInWith3rd_Apple
+import WWSignInWith3rd_Facebook
 
 @main
 final class AppDelegate: UIResponder, UIApplicationDelegate {
