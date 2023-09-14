@@ -7,16 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3DAC9C1927016E78006663C2 /* WWPrint in Frameworks */ = {isa = PBXBuildFile; productRef = 3DAC9C1827016E78006663C2 /* WWPrint */; };
 		3DBCD87426F198EF00522E3B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DBCD87326F198EF00522E3B /* AppDelegate.swift */; };
 		3DBCD87826F198EF00522E3B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DBCD87726F198EF00522E3B /* ViewController.swift */; };
 		3DBCD87B26F198EF00522E3B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DBCD87926F198EF00522E3B /* Main.storyboard */; };
 		3DBCD87D26F198F300522E3B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3DBCD87C26F198F300522E3B /* Assets.xcassets */; };
 		3DBCD88026F198F300522E3B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DBCD87E26F198F300522E3B /* LaunchScreen.storyboard */; };
-		81238C842AB18135005B137E /* WWSignInWith3rd+Apple in Frameworks */ = {isa = PBXBuildFile; productRef = 81238C832AB18135005B137E /* WWSignInWith3rd+Apple */; };
 		8130039027D5D18100436128 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8130038F27D5D18100436128 /* Constant.swift */; };
 		8130039227D5D19000436128 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8130039127D5D19000436128 /* Extension.swift */; };
-		819E4A2D2AB1AEB2004D2DCE /* WWSignInWith3rd+Facebook in Frameworks */ = {isa = PBXBuildFile; productRef = 819E4A2C2AB1AEB2004D2DCE /* WWSignInWith3rd+Facebook */; };
+		81C819B22AB29745009EAA90 /* WWPrint in Frameworks */ = {isa = PBXBuildFile; productRef = 81C819B12AB29745009EAA90 /* WWPrint */; };
+		81C819B42AB29754009EAA90 /* WWSignInWith3rd+Facebook in Frameworks */ = {isa = PBXBuildFile; productRef = 81C819B32AB29754009EAA90 /* WWSignInWith3rd+Facebook */; };
+		81C819B72AB29B01009EAA90 /* WWSignInWith3rd+Facebook in Frameworks */ = {isa = PBXBuildFile; productRef = 81C819B62AB29B01009EAA90 /* WWSignInWith3rd+Facebook */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,9 +37,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				819E4A2D2AB1AEB2004D2DCE /* WWSignInWith3rd+Facebook in Frameworks */,
-				81238C842AB18135005B137E /* WWSignInWith3rd+Apple in Frameworks */,
-				3DAC9C1927016E78006663C2 /* WWPrint in Frameworks */,
+				81C819B72AB29B01009EAA90 /* WWSignInWith3rd+Facebook in Frameworks */,
+				81C819B42AB29754009EAA90 /* WWSignInWith3rd+Facebook in Frameworks */,
+				81C819B22AB29745009EAA90 /* WWPrint in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -143,9 +143,9 @@
 			);
 			name = Example;
 			packageProductDependencies = (
-				3DAC9C1827016E78006663C2 /* WWPrint */,
-				81238C832AB18135005B137E /* WWSignInWith3rd+Apple */,
-				819E4A2C2AB1AEB2004D2DCE /* WWSignInWith3rd+Facebook */,
+				81C819B12AB29745009EAA90 /* WWPrint */,
+				81C819B32AB29754009EAA90 /* WWSignInWith3rd+Facebook */,
+				81C819B62AB29B01009EAA90 /* WWSignInWith3rd+Facebook */,
 			);
 			productName = Example;
 			productReference = 3DBCD87026F198EF00522E3B /* Example.app */;
@@ -176,9 +176,8 @@
 			);
 			mainGroup = 3DBCD86726F198EF00522E3B;
 			packageReferences = (
-				3DAC9C1727016E78006663C2 /* XCRemoteSwiftPackageReference "WWPrint" */,
-				81238C822AB18135005B137E /* XCRemoteSwiftPackageReference "WWSignInWith3rd_Apple" */,
-				819E4A2B2AB1AEB2004D2DCE /* XCRemoteSwiftPackageReference "WWSignInWith3rd_Facebook" */,
+				81C819B02AB29745009EAA90 /* XCRemoteSwiftPackageReference "WWPrint" */,
+				81C819B52AB29B01009EAA90 /* XCRemoteSwiftPackageReference "WWSignInWith3rd_Facebook" */,
 			);
 			productRefGroup = 3DBCD87126F198EF00522E3B /* Products */;
 			projectDirPath = "";
@@ -424,46 +423,37 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		3DAC9C1727016E78006663C2 /* XCRemoteSwiftPackageReference "WWPrint" */ = {
+		81C819B02AB29745009EAA90 /* XCRemoteSwiftPackageReference "WWPrint" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/William-Weng/WWPrint";
+			repositoryURL = "https://github.com/William-Weng/WWPrint.git";
 			requirement = {
 				kind = upToNextMajorVersion;
 				minimumVersion = 1.0.0;
 			};
 		};
-		81238C822AB18135005B137E /* XCRemoteSwiftPackageReference "WWSignInWith3rd_Apple" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/William-Weng/WWSignInWith3rd_Apple";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 1.0.0;
-			};
-		};
-		819E4A2B2AB1AEB2004D2DCE /* XCRemoteSwiftPackageReference "WWSignInWith3rd_Facebook" */ = {
+		81C819B52AB29B01009EAA90 /* XCRemoteSwiftPackageReference "WWSignInWith3rd_Facebook" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/William-Weng/WWSignInWith3rd_Facebook";
 			requirement = {
-				branch = main;
-				kind = branch;
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		3DAC9C1827016E78006663C2 /* WWPrint */ = {
+		81C819B12AB29745009EAA90 /* WWPrint */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 3DAC9C1727016E78006663C2 /* XCRemoteSwiftPackageReference "WWPrint" */;
+			package = 81C819B02AB29745009EAA90 /* XCRemoteSwiftPackageReference "WWPrint" */;
 			productName = WWPrint;
 		};
-		81238C832AB18135005B137E /* WWSignInWith3rd+Apple */ = {
+		81C819B32AB29754009EAA90 /* WWSignInWith3rd+Facebook */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 81238C822AB18135005B137E /* XCRemoteSwiftPackageReference "WWSignInWith3rd_Apple" */;
-			productName = "WWSignInWith3rd+Apple";
+			productName = "WWSignInWith3rd+Facebook";
 		};
-		819E4A2C2AB1AEB2004D2DCE /* WWSignInWith3rd+Facebook */ = {
+		81C819B62AB29B01009EAA90 /* WWSignInWith3rd+Facebook */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 819E4A2B2AB1AEB2004D2DCE /* XCRemoteSwiftPackageReference "WWSignInWith3rd_Facebook" */;
+			package = 81C819B52AB29B01009EAA90 /* XCRemoteSwiftPackageReference "WWSignInWith3rd_Facebook" */;
 			productName = "WWSignInWith3rd+Facebook";
 		};
 /* End XCSwiftPackageProductDependency section */

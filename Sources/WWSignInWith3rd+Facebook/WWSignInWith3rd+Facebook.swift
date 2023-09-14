@@ -74,7 +74,13 @@ public extension WWSignInWith3rd.Facebook {
             
             switch loginResult {
             case .failure(let error): result(.failure(error))
-            case .success(_):
+            case .success(let loginResult):
+                
+                guard let loginResult = loginResult,
+                      !loginResult.isCancelled
+                else {
+                    result(.success(nil)); return
+                }
                 
                 this.userInfomation { userInfoResult in
                     

@@ -16,14 +16,6 @@
 	<string>$(PRODUCT_BUNDLE_PACKAGE_TYPE)</string>
 	<key>CFBundleShortVersionString</key>
 	<string>1.0</string>
-	<key>CFBundleVersion</key>
-	<string>1</string>
-	<key>FacebookAppID</key>
-	<string>&lt;FacebookAppID&gt;</string>
-	<key>FacebookClientToken</key>
-	<string>&lt;FacebookClientToken&gt;</string>
-	<key>FacebookDisplayName</key>
-	<string>&lt;FacebookDisplayName&gt;</string>
 	<key>CFBundleURLTypes</key>
 	<array>
 		<dict>
@@ -33,10 +25,18 @@
 			<string>facebook</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string> &lt;FacebookScheme&gt;</string>
+				<string>&lt;FacebookScheme&gt;</string>
 			</array>
 		</dict>
 	</array>
+	<key>CFBundleVersion</key>
+	<string>1</string>
+	<key>FacebookAppID</key>
+	<string>&lt;FacebookAppID&gt;</string>
+	<key>FacebookClientToken</key>
+	<string>&lt;FacebookClientToken&gt;</string>
+	<key>FacebookDisplayName</key>
+	<string>&lt;FacebookDisplayName&gt;</string>
 	<key>LSApplicationQueriesSchemes</key>
 	<array>
 		<string>fbapi</string>

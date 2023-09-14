@@ -10,30 +10,12 @@
       }
     },
     {
-      "identity" : "wwprint",
-      "kind" : "remoteSourceControl",
-      "location" : "https://github.com/William-Weng/WWPrint.git",
-      "state" : {
-        "revision" : "6b70fabaa1dbeac95b224384819e231a1220900a",
-        "version" : "1.2.0"
-      }
-    },
-    {
       "identity" : "wwsigninwith3rd_apple",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/William-Weng/WWSignInWith3rd_Apple",
       "state" : {
         "revision" : "7841d0389571f6f3b02610b02411115c3328f865",
         "version" : "1.0.1"
-      }
-    },
-    {
-      "identity" : "wwsigninwith3rd_facebook",
-      "kind" : "remoteSourceControl",
-      "location" : "https://github.com/William-Weng/WWSignInWith3rd_Facebook",
-      "state" : {
-        "revision" : "a1c1cb8fa14076be72a26dffa5316e89a8c54fc6",
-        "version" : "1.0.0"
       }
     }
   ],
