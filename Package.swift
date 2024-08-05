@@ -16,14 +16,7 @@ let package = Package(
         .package(url: "https://github.com/facebook/facebook-ios-sdk", .upToNextMinor(from: "16.3.1")),
     ],
     targets: [
-        .target(
-            name: "WWSignInWith3rd_Facebook",
-            dependencies: [
-                .product(name: "FacebookLogin", package: "facebook-ios-sdk"),
-                "WWSignInWith3rd_Apple",
-            ],
-            resources: [.copy("Privacy")]
-        ),
+        .target(name: "WWSignInWith3rd_Facebook", dependencies: [.product(name: "FacebookLogin", package: "facebook-ios-sdk"), "WWSignInWith3rd_Apple"], resources: [.copy("Privacy")]),
     ],
     swiftLanguageVersions: [
         .v5
